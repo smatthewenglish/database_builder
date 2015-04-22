@@ -41,13 +41,6 @@ public class FetchOnlineDataExample
 		System.out.println("*** Fetching data for one entity:");
 		EntityDocument q42 = wbdf.getEntityDocument("Q42");
 		
-		// testing my idea
-		String TEST_VALUE_NAME = "Lily Allen";
-		
-		//System.out.println("The French label for entity Q8 is " + ((ItemDocument) ).getLabels().get("fr").getText() );
-		
-		//System.out.println("Successfully retrieved data for " + TEST_VALUE_NAME.getId());
-		
 		if (q42 instanceof ItemDocument) 
 		{
 			System.out.println("The English name for entity Q42 is " + ((ItemDocument) q42).getLabels().get("en").getText());
