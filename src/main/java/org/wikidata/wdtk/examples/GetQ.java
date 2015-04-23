@@ -11,11 +11,14 @@ import java.util.regex.Pattern;
 
 public class GetQ 
 {
-    public static void getQ(String variable_entity) throws Exception 
+    //public static String[] getQ(String variable_entity) throws Exception
+    public static void getQ(String variable_entity) throws Exception
     {
+    	String variable_entity_nospace = variable_entity.replace(' ', '+');
+    	
         //URL site = new URL("https://www.wikidata.org/wiki/Special:ItemByTitle?site=en&page=Mikhail+Bakunin&submit=Search");
         //URL site = new URL("https://www.wikidata.org/wiki/Special:ItemByTitle?site=en&page=Thomas+Edward+Lawrence&submit=Search");
-        URL site = new URL("https://www.wikidata.org/wiki/Special:ItemByTitle?site=en&page=" + variable_entity + "&submit=Search");
+        URL site = new URL("https://www.wikidata.org/wiki/Special:ItemByTitle?site=en&page=" + variable_entity_nospace + "&submit=Search");
         URLConnection yc = site.openConnection();
         BufferedReader in = new BufferedReader(
                                 new InputStreamReader(
@@ -49,6 +52,10 @@ public class GetQ
         {
             System.out.println(entry.getKey()+" : "+entry.getValue());
         }
+        
+//        String[] result = q_valMap.values().toArray(new String[0]);
+//        
+//        return result;
         
     }
 }
