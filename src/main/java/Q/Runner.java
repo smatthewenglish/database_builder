@@ -14,11 +14,10 @@ import java.util.Map;
 
 public class Runner 
 {
-    static Map<String, HashSet<String> > q_valMap = new HashMap<String, HashSet<String> >();
+
     
 	 public static void main(String[] args) throws Exception 
 	    {
-	    	//System.out.println("whut the fuck");
 	    	
 		    String name_list_file = "/home/matthias/Workbench/SUTD/nytimes_corpus/NYTimesCorpus/2005/01/02/test/people_test.txt";
 	    	
@@ -38,15 +37,14 @@ public class Runner
 			    	String associated_alias = URLEncoder.encode( single_name , "UTF-8");
 			    	
 			    	String platonic_key = single_name;
+			    	System.out.println("now processing: " + platonic_key);
 			    	
-			    	Wikidata_Q_Reader.getQ( platonic_key, associated_alias, q_valMap );
+			    	Wikidata_Q_Reader.getQ( platonic_key, associated_alias );
 			    }
 	    	}
 		    
-	        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
-	        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
-	        {
-	            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
-	        }
+		    //print the struc
+		    Wikidata_Q_Reader.print_data();
+
 	    }
 }

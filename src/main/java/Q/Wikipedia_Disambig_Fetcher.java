@@ -16,7 +16,7 @@ import org.jsoup.select.Elements;
 
 public class Wikipedia_Disambig_Fetcher 
 {
-    public static void all_possibilities( String platonic_key, String associated_alias, Map<String, HashSet<String> > q_valMap ) throws Exception
+    public static void all_possibilities( String platonic_key, String associated_alias ) throws Exception
     {
 		System.out.println("this is a disambig page");
 		//if it's a disambig page we know we can go right to the wikipedia
@@ -49,10 +49,10 @@ public class Wikipedia_Disambig_Fetcher
         
         for (Element linq : linx) 
         {
-        	//System.out.println(linq.text());
+        	System.out.println(linq.text());
         	
         	String linq_nospace = URLEncoder.encode( linq.text() , "UTF-8");
-        	Wikidata_Q_Reader.getQ( platonic_key, linq_nospace, q_valMap );
+        	Wikidata_Q_Reader.getQ( platonic_key, linq_nospace );
 
     	}
 

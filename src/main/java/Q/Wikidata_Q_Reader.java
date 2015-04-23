@@ -23,10 +23,10 @@ import org.jsoup.nodes.Document;
 public class Wikidata_Q_Reader 
 {
 
-    
+    static Map<String, HashSet<String> > q_valMap = new HashMap<String, HashSet<String> >();
     
     //public static String[] getQ(String variable_entity) throws Exception
-    public static void getQ( String platonic_key, String associated_alias, Map<String, HashSet<String> > q_valMap ) throws Exception
+    public static void getQ( String platonic_key, String associated_alias ) throws Exception
     {
 
 
@@ -68,7 +68,7 @@ public class Wikidata_Q_Reader
 	            if (disambig_indicator.matches()) 
 	            {
 	            	//off to get the different usages
-	            	Wikipedia_Disambig_Fetcher.all_possibilities(  platonic_key, associated_alias, q_valMap );
+	            	Wikipedia_Disambig_Fetcher.all_possibilities(  platonic_key, associated_alias );
 	            }
 	            else
 	            {
@@ -84,18 +84,25 @@ public class Wikidata_Q_Reader
 		                
 		                // 'Q' should be appended to an array, since each entity can hold multiple
 		                // Q values on that basis of disambig
-		                put_to_hash( platonic_key, Q, q_valMap );
+		                put_to_hash( platonic_key, Q );
 		            }
 	            }
 	
 	        }
 	        wiki_data_pagecontent.close();
+
+	        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
+	        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
+	        {
+	            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
+	        }
+
 	        
    
     }
     
     // add Q values to their arrayList in the hash map at the index of the appropriate entity
-    public static HashSet<String> put_to_hash(String key, String value, Map<String, HashSet<String> > q_valMap) 
+    public static HashSet<String> put_to_hash(String key, String value ) 
     {
         HashSet<String> valSet;
         if (q_valMap.containsKey(key)) {
@@ -108,5 +115,16 @@ public class Wikidata_Q_Reader
         return valSet;
     }
     
+    
+    // add Q values to their arrayList in the hash map at the index of the appropriate entity
+    public static void print_data() 
+    {
+    	System.out.println("THIS IS THE FINAL DATA SET!!!");
+        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
+        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
+        {
+            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
+        }
+    }
 
 }
