@@ -54,8 +54,8 @@ public class Wikipedia_Disambig_Fetcher
         //this can handle the less structured ones. 
         Elements linx = docx.select( "p:contains(" + associated_alias + ") ~ ul a:eq(0)" );
             
-        System.out.println("This is linx");
-        System.out.println(linx.text());
+        //System.out.println("This is linx");
+        //System.out.println(linx.text());
         
         for (Element linq : linx) 
         {
@@ -64,7 +64,8 @@ public class Wikipedia_Disambig_Fetcher
         	
         	String linq_nospace = URLEncoder.encode( linq.text() , "UTF-8");
         	
-        	//make sure we're still on track
+        	//make sure we're still on track, the reference actually contains the name of the entity we're
+        	//considering.
         	if ( linq_nospace.toLowerCase().contains(platonic_key.toLowerCase()) ) 
         	{
         		Wikidata_Q_Reader.getQ( platonic_key, linq_nospace );

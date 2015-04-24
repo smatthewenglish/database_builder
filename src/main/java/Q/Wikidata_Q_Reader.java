@@ -75,14 +75,12 @@ public class Wikidata_Q_Reader
             	Wikipedia_Disambig_Fetcher.all_possibilities(  platonic_key, associated_alias );
             }
 		
-	        
-	        //Wikipedia_Disambig_Fetcher.urlsVisited.add(wikidata_page);
 
-	        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
-	        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
-	        {
-	            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
-	        }
+//	        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
+//	        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
+//	        {
+//	            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
+//	        }
 	        
     	
     
@@ -109,7 +107,7 @@ public class Wikidata_Q_Reader
     {
     	System.out.println("THIS IS THE FINAL DATA SET!!!");
         // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
-        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
+        for (Map.Entry<String, HashSet<String>> entry : q_valMap.entrySet()) 
         {
             System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
         }
