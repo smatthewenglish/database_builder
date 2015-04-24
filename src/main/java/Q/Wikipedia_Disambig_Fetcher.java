@@ -7,6 +7,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.commons.validator.routines.UrlValidator;
 import org.jsoup.Jsoup;
@@ -16,8 +17,14 @@ import org.jsoup.select.Elements;
 
 public class Wikipedia_Disambig_Fetcher 
 {
+	static Set<String> urlsVisited = new HashSet<String>();
+	static Set<String> linqVisited = new HashSet<String>();
+	
     public static void all_possibilities( String platonic_key, String associated_alias ) throws Exception
     {
+
+    	urlsVisited.add(platonic_key + associated_alias);
+    	
 		System.out.println("this is a disambig page");
 		//if it's a disambig page we know we can go right to the wikipedia
 
@@ -28,7 +35,7 @@ public class Wikipedia_Disambig_Fetcher
 		HttpURLConnection wiki_connection = (HttpURLConnection)wikidata_page.openConnection();
 		InputStream wikiInputStream = null;
 		
-
+	        
 		try 
 		{
 		    // try to connect and use the input stream
@@ -46,21 +53,35 @@ public class Wikipedia_Disambig_Fetcher
 		
         //this can handle the less structured ones. 
         Elements linx = docx.select( "p:contains(" + associated_alias + ") ~ ul a:eq(0)" );
+            
+        System.out.println("This is linx");
+        System.out.println(linx.text());
         
         for (Element linq : linx) 
         {
         	System.out.println(linq.text());
         	
+        	
         	String linq_nospace = URLEncoder.encode( linq.text() , "UTF-8");
-        	Wikidata_Q_Reader.getQ( platonic_key, linq_nospace );
-
+        	
+        	//make sure we're still on track
+        	if ( linq_nospace.toLowerCase().contains(platonic_key.toLowerCase()) ) 
+        	{
+        		Wikidata_Q_Reader.getQ( platonic_key, linq_nospace );
+        	}
+        	
+        	urlsVisited.add(platonic_key + linq_nospace);
     	}
+ 
 
 	    
 
-
+        
     }
     
+ 
+
+
 
 }
 
