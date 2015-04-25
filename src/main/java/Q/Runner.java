@@ -45,6 +45,7 @@ public class Runner
 		    
 		    //print the struc
 		    Wikidata_Q_Reader.print_data();
+		    
 
 	    }
 }

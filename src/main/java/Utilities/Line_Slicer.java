@@ -16,9 +16,13 @@ public class Line_Slicer
 
 	 public static void main(String[] args) throws Exception 
     {
-		 String name_list_file = "/home/matthias/Workbench/SUTD/nytimes_corpus/NYTimesCorpus/2005/01/02/test/people_test.txt";
+		 String name_list_file = "/home/matthias/Workbench/SUTD/nytimes_corpus/Entity_Lists_Test/locations.txt";
+		 
+		 System.out.println("Starting...");
 		 
 		 stripDuplicatesFromFile( name_list_file );
+		 
+		 System.out.println("Finished");
     }
 	
 	 public static void stripDuplicatesFromFile(String filename) throws IOException 
