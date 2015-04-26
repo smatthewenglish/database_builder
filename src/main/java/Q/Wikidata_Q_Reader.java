@@ -74,13 +74,6 @@ public class Wikidata_Q_Reader
             	//off to get the different usages
             	Wikipedia_Disambig_Fetcher.all_possibilities(  platonic_key, associated_alias );
             }
-		
-
-//	        // \\ // ! PRINT IT ! // \\ // \\ // \\ // \\ // \\ // \\
-//	        for (Map.Entry<String, HashSet<String> > entry : q_valMap.entrySet()) 
-//	        {
-//	            System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
-//	        }
 	        
     	
     
