@@ -1,0 +1,237 @@
+{
+    "language": "fr",
+    "missing": [
+        [
+            "P1010",
+            "Iran statistics ID"
+        ],
+        [
+            "P1270",
+            "Norway Database for Statistics on Higher education periodical ID"
+        ],
+        [
+            "P1271",
+            "Norway Database for Statistics on Higher education publisher ID"
+        ],
+        [
+            "P1272",
+            "Norway Import Service and Registration Authority periodical code"
+        ],
+        [
+            "P1274",
+            "ISFDB title ID"
+        ],
+        [
+            "P1275",
+            "Norway Import Service and Registration Authority publisher code"
+        ],
+        [
+            "P1287",
+            "KDG Komponisten der Gegenwart"
+        ],
+        [
+            "P1288",
+            "KLG Kritisches Lexikon der Gegenwartsliteratur"
+        ],
+        [
+            "P1289",
+            "KLfG Kritisches Lexikon der fremdsprachigen Gegenwartsliteratur"
+        ],
+        [
+            "P1293",
+            "Royal Aero Club Aviator's Certificate ID"
+        ],
+        [
+            "P1378",
+            "China railway TMIS station code"
+        ],
+        [
+            "P1386",
+            "Japanese High School Code"
+        ],
+        [
+            "P1400",
+            "FCC Facility ID"
+        ],
+        [
+            "P1466",
+            "WALS lect code"
+        ],
+        [
+            "P1467",
+            "WALS genus code"
+        ],
+        [
+            "P1470",
+            "maximum glide ratio "
+        ],
+        [
+            "P1471",
+            "reporting mark"
+        ],
+        [
+            "P1473",
+            "Nupill Literatura Digital - Author"
+        ],
+        [
+            "P1474",
+            "Nupill Literatura Digital - Document"
+        ],
+        [
+            "P1536",
+            "immediate cause of"
+        ],
+        [
+            "P1537",
+            "contributing factor of"
+        ],
+        [
+            "P1544",
+            "Federal Register Document Number"
+        ],
+        [
+            "P1550",
+            "Orphanet ID"
+        ],
+        [
+            "P1553",
+            "Yandex.Music ID"
+        ],
+        [
+            "P1554",
+            "UBERON ID"
+        ],
+        [
+            "P1573",
+            "BBC Genome identifier"
+        ],
+        [
+            "P1575",
+            "RISS catalog"
+        ],
+        [
+            "P1578",
+            "Gmelin Number"
+        ],
+        [
+            "P1579",
+            "Beilstein Registry Number"
+        ],
+        [
+            "P1580",
+            "University of Barcelona authority ID"
+        ],
+        [
+            "P1583",
+            "MalaCards ID"
+        ],
+        [
+            "P1585",
+            "Municipality code of Brazil"
+        ],
+        [
+            "P1586",
+            "Catalan object of cultural interest ID"
+        ],
+        [
+            "P1587",
+            "Slovene Cultural Heritage Register ID"
+        ],
+        [
+            "P1588",
+            "Desa code of Indonesia"
+        ],
+        [
+            "P1597",
+            "Slovene Cultural Heritage designation"
+        ],
+        [
+            "P1599",
+            "Cambridge Alumni Database ID"
+        ],
+        [
+            "P1602",
+            "BBC Your Paintings venue identifier"
+        ],
+        [
+            "P1603",
+            "number of cases"
+        ],
+        [
+            "P1604",
+            "biosafety level"
+        ],
+        [
+            "P1605",
+            "has natural reservoir"
+        ],
+        [
+            "P1606",
+            "natural reservoir of"
+        ],
+        [
+            "P1607",
+            "Dialnet author"
+        ],
+        [
+            "P1608",
+            "Dialnet book"
+        ],
+        [
+            "P1609",
+            "Dialnet journal"
+        ],
+        [
+            "P1610",
+            "Dialnet article"
+        ],
+        [
+            "P1614",
+            "History of Parliament ID"
+        ],
+        [
+            "P1617",
+            "BBC Things identifer"
+        ],
+        [
+            "P1618",
+            "squad number"
+        ],
+        [
+            "P1626",
+            "Thai cultural heritage ID"
+        ],
+        [
+            "P1642",
+            "acquisition transaction"
+        ],
+        [
+            "P1643",
+            "departure transaction"
+        ],
+        [
+            "P1648",
+            "Dictionary of Welsh Biography ID"
+        ],
+        [
+            "P1649",
+            "Korean Movie Database ID"
+        ],
+        [
+            "P1650",
+            "BBF identifier"
+        ],
+        [
+            "P1651",
+            "YouTube video identifier"
+        ],
+        [
+            "P1653",
+            "TERYT municipality code"
+        ],
+        [
+            "P1657",
+            "MPAA film rating"
+        ]
+    ]
+}

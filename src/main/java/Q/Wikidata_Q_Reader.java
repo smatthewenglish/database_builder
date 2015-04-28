@@ -24,7 +24,7 @@ import org.jsoup.select.Elements;
 public class Wikidata_Q_Reader 
 {
 
-    static Map<String, HashSet<String>> q_valMap = new HashMap<String, HashSet<String> >();
+    static Map<String, HashSet<String>> q_valMap = new HashMap<String, HashSet<String>>();
     
     //public static String[] getQ(String variable_entity) throws Exception
     public static void getQ( String platonic_key, String associated_alias ) throws Exception
@@ -110,3 +110,4 @@ public class Wikidata_Q_Reader
 //{
 //  System.out.println(entry.getKey()+" : " + Arrays.deepToString(q_valMap.entrySet().toArray()) );
 //}
+

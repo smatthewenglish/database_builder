@@ -19,8 +19,8 @@ public class Runner
 	 public static void main(String[] args) throws Exception 
 	    {
 	    	
-		    //String name_list_file = "/home/matthias/Workbench/SUTD/nytimes_corpus/NYTimesCorpus/2005/01/02/test/people_test.txt";
-		    String name_list_file = "/Users/matthew/Workbench/Data/NYTimes/Entity_Lists/Unique_Entry_Lists/persons.txt";
+		    String name_list_file = "/home/matthias/Workbench/SUTD/nytimes_corpus/NYTimesCorpus/2005/01/02/test/people_test.txt";
+		    //String name_list_file = "/Users/matthew/Workbench/Data/NYTimes/Entity_Lists/Unique_Entry_Lists/persons.txt";
 	    	
 		    String single_name;
 		    
