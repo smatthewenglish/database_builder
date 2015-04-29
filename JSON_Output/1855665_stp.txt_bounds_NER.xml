@@ -3,5 +3,17 @@ An article on Saturday about the unearthing of a 1957 <ORGANIZATION>Joseph Stali
 </sentence>
 
 <sentence> 1
-It was a 48-star flag , not a 46-star flag .
+It was a <LOCATION> London</LOCATION> 48-star flag , <LOCATION> Europe </LOCATION> not a 46-star <LOCATION> United Kingdom </LOCATION> flag .
+</sentence>
+
+<sentence> 2
+The Beatles were an English rock band that formed in Liverpool in 1960.
+</sentence>
+
+<sentence> 3
+<ORGANIZATION>Vladimir Putin</ORGANIZATION> 's topless publicity stunts show the Russian president is ... and “the mess we have now” would have been avoided if <ORGANIZATION> Stalin<ORGANIZATION>  had
+</sentence>
+
+<sentence> 4
+Though many in his family had attended Yale University, <LOCATION> Bush </LOCATION>  chose to attend the <PERSON>University of Texas at Austin</PERSON>  in Downtown <PERSON>Austin</PERSON> , c <ORGANIZATION>Texas</ORGANIZATION>
 </sentence>

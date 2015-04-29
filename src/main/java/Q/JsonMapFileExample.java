@@ -35,7 +35,7 @@ public class JsonMapFileExample
     	//fit to write
     	Gson write_gson = new GsonBuilder().create();
     	
-    	try (Writer file_writer = new FileWriter("/home/matthias/Workbench/SUTD/nytimes_corpus/wdtk-parent/wdtk-examples/JSON_Output/user666.json")) 
+    	try (Writer file_writer = new FileWriter("/home/matthias/Workbench/SUTD/nytimes_corpus/wdtk-parent/wdtk-examples/JSON_Output/user_29.json")) 
     	//try (Writer file_writer = new FileWriter("/Users/matthew/Workbench/Data/NYTimes/Entity_Lists/Unique_Entry_Lists/Q_Grabber/JSON_Output/persons_q.json"))
     	{
     		String write_json = write_gson.toJson( data_struc );
